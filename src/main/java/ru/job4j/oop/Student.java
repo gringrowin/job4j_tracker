@@ -9,14 +9,4 @@ public class Student {
         System.out.println("I believe I can fly");
     }
 
-    public static void main(String[] args) {
-        Student petya = new Student();
-        String song = "I believe I can fly";
-        petya.music(song);
-        petya.music(song);
-        petya.music(song);
-        petya.song();
-        petya.song();
-        petya.song();
-    }
 }
