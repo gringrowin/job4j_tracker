@@ -6,19 +6,16 @@ public class UserStore {
         for (User user : users) {
             if (user.getUsername().equals(login)) {
             return user;
-            } else {
-                throw new UserNotFoundException();
             }
         }
-        return null;
+        throw new UserNotFoundException();
     }
 
     public static boolean validate(User user) throws UserInvalidException {
         if (user.isValid() && user.getUsername().length() >= 3) {
             return true;
-        } else {
-            throw new UserInvalidException();
         }
+        throw new UserInvalidException();
     }
 
     public static void main(String[] args) {
