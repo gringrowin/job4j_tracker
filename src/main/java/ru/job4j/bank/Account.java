@@ -2,6 +2,12 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает счет который может быть открыт для User
+ * с указанием реквизизитов и баланса счета.
+ * @author Max Pavlishin
+ * @version 1.0
+*/
 public class Account {
     private String requisite;
     private double balance;
@@ -27,6 +33,9 @@ public class Account {
         this.balance = balance;
     }
 
+    /**
+     * Переопределенный метод equals сравнивает поле requisite
+    */
     @Override
     public boolean equals(Object o) {
         if (this == o) {

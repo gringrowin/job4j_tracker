@@ -2,6 +2,13 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Клас описывает клиента банка хранит в себе паспортные данные клиента
+ * и его имя.
+ * @author Maxim Pavlishin
+ * @version 1.0
+ */
+
 public class User {
     private String passport;
     private String username;
@@ -27,6 +34,9 @@ public class User {
         this.username = username;
     }
 
+    /**
+     * Переопределенный метод equals сравнивает поле passport
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) {
